@@ -1,0 +1,62 @@
+
+@font-face {
+
+	font-family: "trebuc";
+	src: url('../font-style/trebuc.ttf') ;
+}
+
+
+/*NAVBAR-COMPONENT*/
+
+header img[src='image/logo-mumtaz.ico'] {
+
+	width: 11%;
+}
+
+header div.name-brand {
+
+	font-size: 2vw;
+	top: 4px;
+	font-family: "trebuc";
+	color: white;
+}
+
+header a.nav-item {
+
+	font-size: 1.3vw;
+}
+
+/*NAVBAR-COMPONENT*/
+
+@media only screen and (min-width: 1200px) {
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	header div.name-brand {
+
+		color: yellow;
+		top: 2.5px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	header div.name-brand {
+
+		color: red;
+		top: 3px;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+
+
+}
