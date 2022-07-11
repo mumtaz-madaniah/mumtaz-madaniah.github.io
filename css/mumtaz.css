@@ -5,6 +5,12 @@
 	src: url('../font-style/trebuc.ttf') ;
 }
 
+@font-face {
+
+	font-family: "bahnschrift";
+	src: url('../font-style/bahnschrift.ttf') ;
+}
+
 
 /*NAVBAR-COMPONENT*/
 
@@ -21,34 +27,159 @@ header div.name-brand {
 	color: white;
 }
 
-header a.nav-item {
+header li.nav-link, header a.nav-link {
 
 	font-size: 1.3vw;
+	font-family: "bahnschrift";
+	color: white;
+	top: 2.5px;
+}
+
+header a.nav-link {
+
+	text-decoration: none;
+}
+
+header a.nav-link:hover {
+
+	color: black;
+}
+
+.navbar-expand-lg .line-bars-menu {
+
+	width: 45px;
+	height: 40px;
+}
+
+.navbar-expand-lg .line-bars-menu:hover {
+
+	cursor: pointer;
+}
+
+.line-bars-menu .line-bottom {
+
+	transform-origin: left top;
+	transform: translate(0px,0px);
+}
+
+.line-bars-menu .line-top {
+
+	transform-origin: left bottom;
+	transform: translate(0px,0px);
+}
+
+.line-bars-menu .line-top, .line-bars-menu .line-middle, .line-bars-menu .line-bottom {
+
+	height: 4px;
+	width: 35px;
+	transform: rotate(0deg);
+	opacity: 1;
+	transition: all 0.7s ease 0s;
+}
+
+.aside-menu {
+
+	width: 230px;
+	height: 1.5%;
+	/*height: 100%;*/
+	position: absolute;
+	left: -230px;
+	top: 56px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.text-aside-menu {
+
+	height: 30px;
+	font-family: "bahnschrift";
 }
 
 /*NAVBAR-COMPONENT*/
 
-@media only screen and (min-width: 1200px) {
 
+/*SECTION-TOP*/
 
+.carousel-full img.img-fluid, .dark-carousel {
+
+	width: 100%;
+	height: 656px;
 }
+
+.carousel-full img.img-fluid {
+
+	position: relative;
+}
+
+.dark-carousel {
+
+	position: absolute;
+	top: 0px;
+	background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.1));
+}
+
+/*SECTION-TOP*/
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
+	/*NAVBAR-COMPONENT*/
+
 	header div.name-brand {
 
-		color: yellow;
 		top: 2.5px;
 	}
+
+	header a.nav-link {
+
+		top: 2.5px;
+		font-size: 1.36vw;
+	}
+
+	/*NAVBAR-COMPONENT*/
+
+
+	/*SECTION-TOP*/
+
+	.carousel-full img.img-fluid, .dark-carousel {
+
+		height: 642px;
+	}
+
+	/*SECTION-TOP*/
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/*NAVBAR-COMPONENT*/
 
 	header div.name-brand {
 
 		color: red;
 		top: 3px;
+		color: black;
 	}
+
+	header a.nav-link {
+
+		color: black;
+	}
+
+	.text-aside-menu {
+
+		font-size: 2vw;
+	}
+
+	/*NAVBAR-COMPONENT*/
+
+
+	/*SECTION-TOP*/
+
+	.carousel-full img.img-fluid, .dark-carousel {
+
+		height: 600px;
+	}
+
+	/*SECTION-TOP*/	
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -58,5 +189,13 @@ header a.nav-item {
 
 @media only screen and (min-width: 0px) and (max-width: 575px) {
 
+	.text-aside-menu {
 
+		font-size: 3vw;
+	}
+
+	.aside-menu {
+
+		width: 200px;
+	}
 }
