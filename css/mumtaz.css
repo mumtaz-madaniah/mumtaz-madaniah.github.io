@@ -80,7 +80,7 @@ header a.nav-link:hover {
 .aside-menu {
 
 	width: 230px;
-	height: 1.5%;
+	height: 1%;
 	/*height: 100%;*/
 	position: absolute;
 	left: -230px;

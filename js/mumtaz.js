@@ -32,7 +32,7 @@ function LINE_BARS_OVER () {
 
 				$(document).ready(function() {
 
-					$(".aside-menu").animate({height: '1.5%'},700,"jswing");
+					$(".aside-menu").animate({height: '1%'},700,"jswing");
 					$(".aside-menu").animate({left: '-230px'},700,"jswing");
 				})
 
